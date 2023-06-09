@@ -1,7 +1,7 @@
 import Buttons from './Buttons';
 import Counter from './Counter';
 
-export default function Page({ count, onClick, onClickNum }) {
+export default function Page({ count, onClick }) {
   return (
     <div>
       <p>
@@ -12,7 +12,7 @@ export default function Page({ count, onClick, onClickNum }) {
         onClick={onClick}
       />
       <Buttons
-        onClick={onClickNum}
+        onClick={onClick}
       />
     </div>
   );
